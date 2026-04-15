@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Free Consultation | Green Jewelers</title>
+  <meta name="description" content="Book a free, no-pressure jewelry consultation. In person, video, or WhatsApp. Custom engagement rings and jewelry at wholesale prices.">
+
+  <meta property="og:title" content="Book a Free Consultation | Green Jewelers">
+  <meta property="og:description" content="Free consultation for custom engagement rings and jewelry. In person, video, or WhatsApp. No pressure, no obligation.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <nav class="nav-wrapper" aria-label="Main navigation">
+      <a href="index.html" class="logo">Green <span>Jewelers</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Free Consultation</a></li>
+      </ul>
+      <button type="button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="contact-hero">
+    <div class="container">
+      <h1>Book Your Free Consultation</h1>
+      <p>No pressure. No obligation. Just an honest conversation about what you're looking for.</p>
+    </div>
+  </section>
+
+  <!-- ===== MEETING OPTIONS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="meeting-options">
+        <div class="meeting-card">
+          <div class="meeting-icon" aria-hidden="true">&#x1F3E0;</div>
+          <h3>In-Person</h3>
+          <p>Face-to-face meeting. We bring samples, show stones, and design together. NYC/NJ area.</p>
+        </div>
+        <div class="meeting-card">
+          <div class="meeting-icon" aria-hidden="true">&#x1F4F9;</div>
+          <h3>Video Call</h3>
+          <p>Quick Zoom call. Perfect for distance or busy schedules. 20-30 minutes.</p>
+        </div>
+        <div class="meeting-card">
+          <div class="meeting-icon" aria-hidden="true">&#x1F4AC;</div>
+          <h3>WhatsApp</h3>
+          <p>Send a message, photo, or question. We respond within hours (usually much less).</p>
+        </div>
+      </div>
+
+      <!-- ===== FORM + SIDEBAR ===== -->
+      <div class="consultation-grid">
+        <div class="consultation-info">
+          <h2>What Happens in a Consultation?</h2>
+          <p>Whether you're looking for an engagement ring, thinking about a special gift, or want to redesign an existing piece - the first step is a conversation. We'll sit down (physically, on Zoom, or WhatsApp), understand what matters to you, and show you exactly what's possible - and at what price.</p>
+
+          <ul class="check-list">
+            <li>We hear what you're looking for (style, budget, occasion)</li>
+            <li>We show relevant options (photos, examples, CAD)</li>
+            <li>We explain natural vs. lab-grown differences</li>
+            <li>We give a transparent quote - no surprises</li>
+            <li>You decide on your own time. No pressure. Period.</li>
+          </ul>
+
+          <h3 class="trust-heading">Trust Signals</h3>
+          <ul class="trust-list">
+            <li>10+ Years in the Diamond Industry</li>
+            <li>GIA/IGI Certified Diamonds</li>
+            <li>Hundreds of Happy Clients</li>
+            <li>Serving NYC, NJ, CT &amp; Beyond</li>
+            <li>Full Warranty &amp; Size Guarantee</li>
+          </ul>
+        </div>
+
+        <div class="consultation-form-wrap">
+          <form id="consultation-form" class="consultation-form" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+1 (xxx) xxx-xxxx">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="service">What are you looking for? *</label>
+              <select id="service" name="service" required>
+                <option value="">Select an option</option>
+                <option value="engagement-ring">Engagement Ring</option>
+                <option value="custom-jewelry">Custom Jewelry</option>
+                <option value="ring-redesign">Ring Redesign</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Estimated Budget</label>
+              <select id="budget" name="budget">
+                <option value="">Select a range</option>
+                <option value="under-3k">Under $3,000</option>
+                <option value="3k-5k">$3,000 - $5,000</option>
+                <option value="5k-10k">$5,000 - $10,000</option>
+                <option value="10k-20k">$10,000 - $20,000</option>
+                <option value="20k-plus">$20,000+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="meeting">Preferred Meeting Type</label>
+              <select id="meeting" name="meeting">
+                <option value="">Select preference</option>
+                <option value="in-person">In-Person</option>
+                <option value="video">Video Call</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="notes">Notes / Inspiration Link</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Describe what you're looking for, or paste a Pinterest / Instagram link..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Book My Free Consultation</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Direct contact below form -->
+      <div class="direct-contact">
+        <p>Prefer to reach out directly?</p>
+        <div class="direct-contact-buttons">
+          <a href="https://wa.me/1234567890" class="btn btn-whatsapp" target="_blank" rel="noopener">WhatsApp Us</a>
+          <a href="tel:+1234567890" class="btn btn-outline">Call Now</a>
+          <a href="mailto:info@greenjewelers.com" class="btn btn-outline">Email Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section section-cream" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="overline">Common Questions</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">How much does a custom engagement ring cost?</button>
+          <div class="faq-answer">
+            <p>It depends entirely on the stone, metal, and design. Because we source at wholesale, the same ring that retails for $8,000 could start at a significantly lower price with us. The best way to get an accurate idea is to book a free consultation - we'll give you a transparent quote based on exactly what you want.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">What's the difference between lab-grown and natural diamonds?</button>
+          <div class="faq-answer">
+            <p>Both are real diamonds with identical physical, chemical, and optical properties. Natural diamonds were formed over billions of years underground. Lab-grown diamonds are created in a controlled environment. Lab-grown typically costs 60-80% less than natural. Both come with GIA or IGI certification. We'll explain the pros and cons so you can decide what's right for you.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">How long does the custom process take?</button>
+          <div class="faq-answer">
+            <p>From initial consultation to finished piece, most custom orders take 2-4 weeks. Rush orders are possible in some cases. We'll give you an exact timeline once we finalize the design.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">Do I need an appointment?</button>
+          <div class="faq-answer">
+            <p>Yes, we work by appointment to ensure you get our full, undivided attention. You can book a consultation here, on WhatsApp, or by phone. We're flexible with scheduling.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">Do you ship nationwide?</button>
+          <div class="faq-answer">
+            <p>Yes. While we primarily serve the Tri-State area (NYC, NJ, CT) for in-person consultations, we work with clients nationwide via video calls and WhatsApp. Finished pieces are shipped fully insured.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">What if I don't like the final product?</button>
+          <div class="faq-answer">
+            <p>You approve the design via a 3D CAD rendering before we start production. We make as many changes as needed until you're 100% happy. If something isn't perfect after delivery, we'll make it right. That's our promise.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">Can I upgrade my diamond later?</button>
+          <div class="faq-answer">
+            <p>Absolutely. We offer full credit on the original stone toward a larger or higher-quality diamond. Many clients upgrade for anniversaries or special milestones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Green <span>Jewelers</span></a>
+          <p>Custom jewelry at wholesale prices. Serving the Jewish community with personal service, GIA/IGI certified diamonds, and decade of industry experience.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#engagement-rings">Engagement Rings</a></li>
+            <li><a href="services.html#custom-jewelry">Custom Jewelry</a></li>
+            <li><a href="services.html#redesign">Ring Redesign</a></li>
+            <li><a href="services.html#custom-jewelry">Tennis Bracelets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul>
+            <li><a href="contact.html">Free Consultation</a></li>
+            <li><a href="https://wa.me/1234567890" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:info@greenjewelers.com">info@greenjewelers.com</a></li>
+            <li><a href="https://www.instagram.com/green_jewelers/" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Green Jewelers. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
