@@ -20,6 +20,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pages.css">
 
   <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">
@@ -45,12 +46,13 @@
 </head>
 <body>
 
+  <a href="#main" class="skip-link">Skip to main content</a>
+
   <!-- ===== HEADER ===== -->
   <header class="site-header">
     <nav class="nav-wrapper" aria-label="Main navigation">
-      <a href="index.html" class="logo">Green <span>Jewelers</span></a>
+      <a href="index.html" class="logo"><img src="images/green-jewelers-logo.jpg" alt="Green Jewelers logo" class="logo-img"> Green <span>Jewelers</span></a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -63,36 +65,43 @@
   </header>
 
   <!-- ===== HERO ===== -->
+  <main id="main">
   <section class="hero" id="hero">
+    <div class="sparkle-container" aria-hidden="true"></div>
     <div class="container">
-      <div class="hero-content">
-        <span class="hero-badge">Wholesale Pricing, Direct to You</span>
-        <h1>Custom Jewelry.<br><span class="accent">Wholesale Prices.</span><br>Personal Service.</h1>
-        <p>Custom engagement rings, jewelry design and redesign - with a decade of wholesale diamond experience, face-to-face service, and prices you won't find at retail. Serving the Jewish community across NYC, NJ &amp; CT.</p>
-        <div class="hero-buttons">
-          <a href="contact.html" class="btn btn-primary">Book Your Free Consultation</a>
-          <a href="services.html" class="btn btn-secondary">Browse Our Work</a>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge">Wholesale Pricing, Direct to You</span>
+          <h1>Custom Jewelry.<br><span class="accent">Wholesale Prices.</span><br>Personal Service.</h1>
+          <p>Custom engagement rings, jewelry design and redesign - with a decade of wholesale diamond experience, face-to-face service, and prices you won't find at retail. Serving the Jewish community across NYC, NJ &amp; CT.</p>
+          <div class="hero-buttons">
+            <a href="contact.html" class="btn btn-primary">Book Your Free Consultation</a>
+            <a href="services.html" class="btn btn-secondary">Browse Our Work</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="number">10+</span>
+              <span class="label">Years Experience</span>
+            </div>
+            <div class="hero-stat">
+              <span class="number">500+</span>
+              <span class="label">Happy Clients</span>
+            </div>
+            <div class="hero-stat">
+              <span class="number">GIA</span>
+              <span class="label">Certified Diamonds</span>
+            </div>
+          </div>
         </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <span class="number">10+</span>
-            <span class="label">Years Experience</span>
-          </div>
-          <div class="hero-stat">
-            <span class="number">500+</span>
-            <span class="label">Happy Clients</span>
-          </div>
-          <div class="hero-stat">
-            <span class="number">GIA</span>
-            <span class="label">Certified Diamonds</span>
-          </div>
+        <div class="hero-image">
+          <img src="images/halo-diamond-engagement-ring-on-hand.jpg" alt="Custom halo diamond engagement ring worn on hand - Green Jewelers" width="600" height="600" loading="eager">
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===== WHY GREEN JEWELERS ===== -->
-  <section class="section section-cream" id="why-us">
+  <section class="section section-alt" id="why-us">
     <div class="container">
       <div class="section-header">
         <span class="overline">The Green Jewelers Difference</span>
@@ -132,7 +141,8 @@
       </div>
       <div class="categories-grid">
         <a class="category-card" href="services.html#engagement-rings">
-          <div class="card-bg" style="background-color: var(--green-dark);"></div>
+          <div class="card-bg" style="background-image: url('images/oval-engagement-rings-collage.jpg');"></div>
+          <img class="sr-only" src="images/oval-engagement-rings-collage.jpg" alt="Custom oval engagement rings collection by Green Jewelers">
           <div class="category-content">
             <h3>Engagement Rings</h3>
             <p>Fully custom. Oval, Solitaire, Hidden Halo, Pave and more. Natural or Lab-Grown.</p>
@@ -140,7 +150,8 @@
           </div>
         </a>
         <a class="category-card" href="services.html#custom-jewelry">
-          <div class="card-bg" style="background-color: var(--green);"></div>
+          <div class="card-bg" style="background-image: url('images/stacked-diamond-bands-on-fabric.jpg');"></div>
+          <img class="sr-only" src="images/stacked-diamond-bands-on-fabric.jpg" alt="Stacked diamond eternity bands and wedding rings on fabric">
           <div class="category-content">
             <h3>Eternity Bands &amp; Wedding Rings</h3>
             <p>Full or half eternity, matched to your engagement ring. White, yellow, or rose gold.</p>
@@ -148,7 +159,8 @@
           </div>
         </a>
         <a class="category-card" href="services.html#custom-jewelry">
-          <div class="card-bg" style="background-color: var(--green-light);"></div>
+          <div class="card-bg" style="background-image: url('images/diamond-tennis-bracelet-on-wrist.jpg');"></div>
+          <img class="sr-only" src="images/diamond-tennis-bracelet-on-wrist.jpg" alt="Diamond tennis bracelet on wrist - classic lab-grown or natural">
           <div class="category-content">
             <h3>Tennis Bracelets</h3>
             <p>Classic and modern diamond tennis bracelets. Lab-Grown or natural, in various sizes and styles.</p>
@@ -156,7 +168,8 @@
           </div>
         </a>
         <a class="category-card" href="services.html#custom-jewelry">
-          <div class="card-bg" style="background-color: var(--green);"></div>
+          <div class="card-bg" style="background-image: url('images/gold-chai-necklace.jpg');"></div>
+          <img class="sr-only" src="images/gold-chai-necklace.jpg" alt="Gold Chai pendant necklace - Jewish jewelry by Green Jewelers">
           <div class="category-content">
             <h3>Necklaces &amp; Pendants</h3>
             <p>Diamond solitaires, Chai pendants, Hebrew name necklaces. Delicate everyday to statement pieces.</p>
@@ -164,7 +177,8 @@
           </div>
         </a>
         <a class="category-card" href="services.html#custom-jewelry">
-          <div class="card-bg" style="background-color: var(--green-dark);"></div>
+          <div class="card-bg" style="background-image: url('images/round-diamond-stud-earrings.jpg');"></div>
+          <img class="sr-only" src="images/round-diamond-stud-earrings.jpg" alt="Round diamond stud earrings - classic diamond earrings">
           <div class="category-content">
             <h3>Earrings</h3>
             <p>Diamond studs, hoops, and drop earrings. Classic and timeless. Lab-Grown or natural.</p>
@@ -172,7 +186,8 @@
           </div>
         </a>
         <a class="category-card" href="services.html#redesign">
-          <div class="card-bg" style="background-color: var(--green-light);"></div>
+          <div class="card-bg" style="background-image: url('images/jewelry-transformation-before-after-ring.jpg');"></div>
+          <img class="sr-only" src="images/jewelry-transformation-before-after-ring.jpg" alt="Jewelry redesign before and after - ring transformation">
           <div class="category-content">
             <h3>Ring Redesign &amp; Repair</h3>
             <p>Turn an heirloom into a modern piece you'll love to wear. Professional reset and repair.</p>
@@ -184,7 +199,7 @@
   </section>
 
   <!-- ===== HOW IT WORKS ===== -->
-  <section class="section section-cream" id="process">
+  <section class="section section-alt" id="process">
     <div class="container">
       <div class="section-header">
         <span class="overline">The Process</span>
@@ -214,6 +229,54 @@
       </div>
       <div class="text-center" style="margin-top: 48px;">
         <a href="contact.html" class="btn btn-outline">Ready to Start? Book Your Free Consultation &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR WORK GALLERY ===== -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="overline">Our Work</span>
+        <h2>Recently Crafted Pieces</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/solitaire-diamond-ring-outdoors.jpg" alt="Solitaire diamond engagement ring photographed outdoors in natural light" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="images/blue-purple-toi-et-moi-ring.jpg" alt="Blue and purple toi et moi gemstone ring - custom two-stone design" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="images/diamond-bangles-stack.jpg" alt="Stacked diamond bangle bracelets - luxury gold bangles" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="images/flower-pendant-necklace.jpg" alt="Flower-shaped diamond pendant necklace - delicate floral jewelry design" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="images/blue-halo-stud-earring.jpg" alt="Blue gemstone halo stud earring with diamond surround" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="images/three-stone-diamond-ring-on-hand.jpg" alt="Three stone diamond ring worn on hand - past present future engagement ring" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="images/heart-and-initial-charm-necklace.jpg" alt="Heart and initial charm necklace - personalized custom jewelry" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="images/pink-flower-gemstone-ring.jpg" alt="Pink flower gemstone ring - colorful custom jewelry design" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="images/long-diamond-drop-earrings-collage.jpg" alt="Long diamond drop earrings collection - elegant statement earrings" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="images/pink-purple-gemstone-bracelet.jpg" alt="Pink and purple gemstone bracelet - colorful custom bracelet design" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="images/round-diamond-eternity-band.jpg" alt="Round diamond eternity band - full circle diamond wedding ring" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="images/triangle-station-necklace.jpg" alt="Triangle station diamond necklace - modern geometric jewelry design" loading="lazy">
+        </div>
       </div>
     </div>
   </section>
@@ -249,7 +312,7 @@
   </section>
 
   <!-- ===== LAB VS NATURAL ===== -->
-  <section class="section section-cream" id="lab-vs-natural">
+  <section class="section section-alt" id="lab-vs-natural">
     <div class="container">
       <div class="comparison-wrapper">
         <div class="comparison-text">
@@ -265,8 +328,8 @@
           <a href="contact.html" class="btn btn-outline">Learn the Difference - Book a Consultation &rarr;</a>
         </div>
         <div class="comparison-visual">
+          <img src="images/three-stone-diamond-ring-in-box.jpg" alt="Three stone diamond ring in premium box - natural and lab-grown diamonds available" loading="lazy">
           <div>
-            <div class="diamond-icon" aria-hidden="true">&#x1F48E;</div>
             <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Same Sparkle. Your Choice.</h3>
             <p style="color: var(--gray); font-size: 0.95rem;">Natural diamonds formed over billions of years. Lab-grown diamonds created with cutting-edge technology. Both are real. Both are stunning. We'll help you decide which is right for your piece and your budget.</p>
           </div>
@@ -319,11 +382,12 @@
       <p>Book a free, no-pressure consultation. In person, video, or WhatsApp.</p>
       <div class="cta-buttons">
         <a href="contact.html" class="btn btn-primary">Book Now</a>
-        <a href="https://wa.me/1234567890" class="btn btn-whatsapp" target="_blank" rel="noopener">WhatsApp Us</a>
-        <a href="tel:+1234567890" class="btn btn-secondary">Call Now</a>
+        <a href="https://wa.me/16462763100" class="btn btn-whatsapp" target="_blank" rel="noopener">WhatsApp Us</a>
+        <a href="tel:+16462763100" class="btn btn-secondary">Call Now</a>
       </div>
     </div>
   </section>
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
@@ -354,8 +418,8 @@
           <h4>Get in Touch</h4>
           <ul>
             <li><a href="contact.html">Free Consultation</a></li>
-            <li><a href="https://wa.me/1234567890" target="_blank" rel="noopener">WhatsApp</a></li>
-            <li><a href="mailto:info@greenjewelers.com">info@greenjewelers.com</a></li>
+            <li><a href="https://wa.me/16462763100" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:info@eligreenjewelers.com">info@eligreenjewelers.com</a></li>
             <li><a href="https://www.instagram.com/green_jewelers/" target="_blank" rel="noopener">Instagram</a></li>
           </ul>
         </div>
@@ -367,7 +431,7 @@
   </footer>
 
   <!-- WhatsApp Float -->
-  <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/16462763100" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
